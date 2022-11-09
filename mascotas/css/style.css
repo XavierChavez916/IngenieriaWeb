@@ -24,6 +24,7 @@ body{
 						 "sponsor sponsor"
 						 "footer footer";	
 }
+
 /*  --------------------------------------------  */
 /*                    header                      */
 /*  --------------------------------------------  */
@@ -49,6 +50,37 @@ body{
 	background-color: #65524D;
 	color: #fff;
 }
+
+
+/*  --------------------------------------------  */
+/*                 fin header                     */
+/*  --------------------------------------------  */
+
+
+
+/*  --------------------------------------------  */
+/*                      main                      */
+/*  --------------------------------------------  */
+main{
+	grid-area: slider;
+	margin: 0 auto;
+	width: 90%;
+	padding: 2em 0;
+}
+main h2{
+	color: #817E9F;
+	font-size: 2em;
+}
+main p{
+	color: #605B5B;
+	font-size: 1em;
+	line-height: 28px;
+}
+
+/*  --------------------------------------------  */
+/*                   fin main                     */
+/*  --------------------------------------------  */
+
 /*  --------------------------------------------  */
 /*                    slider                      */
 /*  --------------------------------------------  */
@@ -77,6 +109,8 @@ body{
 	background-color: #fff;
 	display: flex;
 	justify-content: space-between;
+	padding-left: 30px;
+	padding-right: 30px;
 }
 .contenedor .adopcion1 .cardog h3{
 	font-size: 25px;
@@ -85,32 +119,194 @@ body{
 	padding: 5px 10px;
 }
 .contenedor .adopcion1 .cardog p{
-	padding: 5px 10px;
+	padding-left: 15px;
 	color: #605B5B;
+}
+
+/* Button de mas informacion 1*/
+.contenedor .adopcion1 .cardog button{
+	display: flex;
+    float: right;
+	background-color:#B5EF8A;
+	
+	border-radius: 15px;
+	padding: 12px 13%;
+	margin-top: 20%;
+	margin-right: 10px;
+	margin-bottom: 20px;
 }
 .contenedor .adopcion2{
 	grid-area: adopta2;
 	background-color: #fff;
 	display: flex;
 	justify-content: space-between;
+	padding-right: 30px;
 }
-.contenedor .adopcion2 .cardog h3{
+.contenedor .adopcion2 .carddog2 h3{
 	font-size: 25px;
 	color: #817E9F;
 	text-transform: uppercase;
 	padding: 5px 10px;
 }
-.contenedor .adopcion2 .cardog p{
+.contenedor .adopcion2 .carddog2 p{
 	padding: 5px 10px;
 	color: #605B5B;
 }
+/* Button de mas informacion2*/
+.contenedor .adopcion2 .carddog2 button{
+	display: flex;
+    float: right;
+	background-color:#B5EF8A;
+	
+	border-radius: 15px;
+	padding: 12px 13%;
+	margin-top: 10%;
+	margin-right: 10px;
+	margin-bottom: 20px;
+}
+
 .contenedor .doctor{
 	grid-area: doctor;
-	background-color: #333;
+	display: grid;
+	grid-template-columns: repeat(4,1fr);
+	grid-template-rows: 1fr;
+	column-gap: 1rem;
+	margin-top: 10px;
+	background-color: #fff;
+	padding: 10px 8px;
+}
+.contenedor .doctor .doctor1{
+	position: relative;
+    display: inline-block;
+    text-align: center;
+	font-size: 1rem;
+	
+}
+
+.contenedor .doctor .doctor1 img{
+	position: relative;
+    display: inline-block;
+    text-align: center;
+	font-size: 1rem;
+	box-shadow: 5px 8px 12px #1B1B1B;
+	
+}
+.contenedor .doctor .doctor1 h3{
+	font-weight: normal; 
+	position: absolute;
+	bottom: 77px;
+	text-align: left;
+	
+	font-size: big;
+	padding: 10px 25px 0px 30px;
+	transform: translate(0%, 10%);
+}
+.contenedor .doctor .doctor1 p{
+	
+	position: absolute;
+	bottom: 11px;
+	text-align: left;
+	
+	font-size: smaller;
+	padding: 10px 25px 20px 30px;
+	transform: translate(0%, 10%);
+	color: #2a2727;
+}
+/* /doctor 2/ */
+.contenedor .doctor .doctor2{
+	position: relative;
+    display: inline-block;
+    text-align: center;
+	font-size: 1rem;
+}
+.contenedor .doctor .doctor2 h3{
+	font-weight: normal; 
+	position: absolute;
+	bottom: 77px;
+	text-align: left;
+	
+	font-size: big;
+	padding: 10px 25px 0px 30px;
+	transform: translate(0%, 10%);
+}
+.contenedor .doctor .doctor2 p{
+	
+	position: absolute;
+	bottom: 11px;
+	text-align: left;
+	
+	font-size: smaller;
+	padding: 10px 25px 20px 30px;
+	transform: translate(0%, 10%);
+	color: #2a2727;
+}
+/* /doctor 3/ */
+.contenedor .doctor .doctor3{
+	position: relative;
+    display: inline-block;
+    text-align: center;
+	font-size: 1rem;
+}
+.contenedor .doctor .doctor3 h3{
+	font-weight: normal; 
+	position: absolute;
+	bottom: 77px;
+	text-align: left;
+	
+	font-size: big;
+	padding: 10px 25px 0px 30px;
+	transform: translate(0%, 10%);
+}
+.contenedor .doctor .doctor3 p{
+	
+	position: absolute;
+	bottom: 11px;
+	text-align: left;
+	
+	font-size: smaller;
+	padding: 10px 25px 20px 30px;
+	transform: translate(0%, 10%);
+	color: #2a2727;
+}
+
+/* /doctor 4/ */
+.contenedor .doctor .doctor4{
+	position: relative;
+    display: inline-block;
+    text-align: center;
+	font-size: 1rem;
+}
+.contenedor .doctor .doctor4 h3{
+	font-weight: normal; 
+	position: absolute;
+	bottom: 77px;
+	text-align: left;
+	
+	font-size: big;
+	padding: 10px 25px 0px 30px;
+	transform: translate(0%, 10%);
+}
+.contenedor .doctor .doctor4 p{
+	
+	position: absolute;
+	bottom: 11px;
+	text-align: left;
+	
+	font-size: smaller;
+	padding: 10px 25px 20px 30px;
+	transform: translate(0%, 10%);
+	color: #2a2727;
 }
 .contenedor .sponsor{
 	grid-area: sponsor;
 	background-color: #333;
+	text-align: center;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+.contenedor .sponsor img{
+	margin-left: 10%;
+	margin-right: 10%;
 }
 /*  --------------------------------------------  */
 /*                    footer                      */
@@ -138,4 +334,64 @@ body{
 }
 .contenedor .piePagina .redesSociales a:hover{
 	color: #fff;
+}
+
+
+/*  --------------------------------------------  */
+/*                fin footer                      */
+/*  --------------------------------------------  */
+
+
+/*  --------------------------------------------  */
+/*                   formularios                  */
+/*  --------------------------------------------  */
+
+.grupoInput{
+	display: block;
+	padding: 10px;
+}
+.grupoInput .alert{
+	color: red;
+}
+
+.grupoInput label{
+	display: block;
+}
+
+.grupoInput input[type=text], .grupoInput input[type=email], .grupoInput input[type=number], .grupoInput input[type=date]{
+	width: 90%;
+	padding: 15px;
+	border-radius: 5;
+}
+
+
+
+.boton{
+	background-color: #4CAF50; /* Green */
+	border: none;
+	color: white;
+	padding: 20px;
+	text-align: center;
+	
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	border-radius: 12px;
+	transition: 0.3s;
+}
+
+.boton:hover{
+	background-color: #3C8F40;
+}
+/*  --------------------------------------------  */
+/*               fin formularios                  */
+/*  --------------------------------------------  */
+
+
+
+
+.centrado{
+	text-align: center;
 }
