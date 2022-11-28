@@ -25,36 +25,16 @@
 		</nav>
 	</header>
 	<main>
+        <h2>Ingrese el Id a eliminar</h2>
         <h3>Formulario de adopción</h3>
-        <form method="post" action="procesar.php">
+        <form method="post" action="borrarId.php">
             <div class="grupoInput">
-                <label for="nombres">Nombres
+                <label for="idPersonal">idPersonal
                     <span class="alert">*</span>
                 </label>
-                <input type="text" name="nombres" id="nombres" placeholder="Ingrese sus nombres" required>
+                <input type="number" name="idPersonal" id="idPersonal" placeholder="Ingrese sus idPersonal" required>
             </div>
-            <div class="grupoInput">
-                <label for="apellidos">Apellidos
-                <span class="alert">*</span>
-                </label>
-                <input type="text" name="apellidos" id="apellidos" placeholder="Ingrese sus apellidos" required>
-            </div>
-            <div class="grupoInput">
-                <label for="correo">Correo<span class="alert">*</span></label>
-                <input type="email" name="correo" id="correo" placeholder="Ingrese su correo" required>
-            </div>
-            <div class="grupoInput">
-                <label for="telefono">Teléfono<span class="alert">*</span></label>
-                <input type="number" name="telefono" id="telefono" placeholder="Ingrese su telefono">
-            </div>
-            <div class="grupoInput">
-                <label for="direccion">Dirección</label>
-                <input type="text" name="direccion" id="direccion" placeholder="Ingrese su direccion">
-            </div>
-            <div class="grupoInput">
-                <label for="fecha">Fecha de nacimiento</label>
-                <input type="date" name="fecha" id="fecha" placeholder="Ingrese su fecha de nacimiento">
-            </div>
+           
             <div class="centrado">
                 <button class="boton" type="submit">Guardar</button>
             </div>
