@@ -1,7 +1,6 @@
 <?php
-    define('DBHOST', 'localhost');
-    define('DBUSER', 'root');
-    define('DBPASS', '');
-    define('DBNAME', 'petsbd');
-    
+define('DBHOST', 'localhost');
+define('DBUSER', 'root');
+define('DBPASS', '');
+define('DBNAME', 'petsbd');
 ?>

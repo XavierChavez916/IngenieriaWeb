@@ -592,3 +592,78 @@ main p {
 .centrado {
 	text-align: center;
 }
+
+/* SELECT */
+
+.contenedor .content-select select{
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+.content-select  {
+    width: 100000px;
+   
+}
+/* Eliminamos la fecha que por defecto aparece en el desplegable */
+.contenedor .content-select select::-ms-expand {
+    display: none;
+}
+
+.contenedor .content-select{
+	max-width: 250px;
+	position: relative;
+}
+ 
+.contenedor .content-select select{
+	display: inline-block;
+	width: 100%;
+	cursor: pointer;
+  	padding: 7px 10px;
+  	height: 42px;
+  	outline: 0; 
+  	border: 0;
+	border-radius: 0;
+	background: #f0f0f0;
+	color: #7b7b7b;
+	font-size: 1em;
+	color: #999;
+	font-family: 
+	'Quicksand', sans-serif;
+	border:2px solid rgba(0,0,0,0.2);
+    border-radius: 12px;
+    position: relative;
+    transition: all 0.25s ease;
+}
+ 
+.contenedor .content-select select:hover{
+	background: #B1E8CD;
+}
+
+
+
+table {
+	table-layout: fixed;
+	width: 100%;
+	border-collapse: collapse;
+	border: 3px solid purple;
+  }
+  
+  thead th:nth-child(1) {
+	width: 30%;
+  }
+  
+  thead th:nth-child(2) {
+	width: 20%;
+  }
+  
+  thead th:nth-child(3) {
+	width: 15%;
+  }
+  
+  thead th:nth-child(4) {
+	width: 35%;
+  }
+  
+  th, td {
+	padding: 20px;
+  }

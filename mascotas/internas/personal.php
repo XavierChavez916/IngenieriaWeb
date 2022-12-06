@@ -25,14 +25,14 @@
 		</nav>
 	</header>
 	<main>
-        <h3>Listado de personas</h3>
+        <h3>Listado de postulaciones</h3>
        <?php
         include("../dll/config.php");
-        include("../dll/class_mysql.php");
-        $miconexion = new class_mysql();
-        $miconexion->conectar(DBHOST, DBSUSER, DBPASS, DBNAME);
-        $miconexion->consulta("select * from personal");
-        $miconexion-> verconsulta();
+        include("../dll/class_mysqli.php");
+        $miconexion = new class_mysqli();
+        $miconexion->conectar(DBHOST, DBUSER, DBPASS, DBNAME);
+        $miconexion->consulta("select nombres, apellidos, cedula, nombre, raza, postulaciones from personal p INNER JOIN mascota m ON p.id=m.id");
+        $miconexion-> verconsultaCRUD();
        ?>
     </main>
 	<section class="sponsor">

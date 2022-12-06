@@ -40,25 +40,46 @@
                 <input type="text" name="apellidos" id="apellidos" placeholder="Ingrese sus apellidos" required>
             </div>
             <div class="grupoInput">
-                <label for="correo">Correo<span class="alert">*</span></label>
-                <input type="email" name="correo" id="correo" placeholder="Ingrese su correo" required>
+                <label for="correo">Direccion<span class="alert">*</span></label>
+                <input type="text" name="correo" id="direccion" placeholder="Ingrese su correo" required>
             </div>
             <div class="grupoInput">
-                <label for="telefono">Teléfono<span class="alert">*</span></label>
-                <input type="number" name="telefono" id="telefono" placeholder="Ingrese su telefono">
+                <label for="telefono">Correo<span class="alert">*</span></label>
+                <input type="email" name="correo" id="correo" placeholder="Ingrese su telefono">
             </div>
             <div class="grupoInput">
-                <label for="direccion">Dirección</label>
+                <label for="direccion">Cedula</label>
                 <input type="text" name="direccion" id="direccion" placeholder="Ingrese su direccion">
             </div>
-            <div class="grupoInput">
-                <label for="fecha">Fecha de nacimiento</label>
-                <input type="date" name="fecha" id="fecha" placeholder="Ingrese su fecha de nacimiento">
+            <div class="content-select">
+                <label for="mascota">Mascota</label>
+                <select id="miselector" name="miselector">
+                    <option value="0">Seleccione:</option>
+                    <?php
+
+                    
+                        include("../dll/config.php");
+                        include("../dll/class_mysqli.php");
+                        $miconexion = new class_mysqli();
+                        $miconexion->conectar(DBHOST, DBUSER, DBPASS, DBNAME);
+                        $miconexion->consulta("select * from mascota");
+                        $miconexion-> selectBox();
+                
+                    ?>
+                </select>
             </div>
+
             <div class="centrado">
                 <button class="boton" type="submit">Guardar</button>
             </div>
             
+
+
+
+            <!-- MASCOTA -->
+
+
+           
             
         </form>
     </main>

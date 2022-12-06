@@ -2,17 +2,25 @@
 
     // extract($_POST);
 
-
-    include("../dll/conexion.php");
+    include("../dll/config.php");
+    include("../dll/class_mysqli.php");
+    $miconexion = new class_mysqli();
+    $miconexion->conectar(DBHOST, DBUSER, DBPASS, DBNAME);
 
 
     if(isset($_GET['id'])){
         $id = $_GET['id'];
-        $sql = "DELETE FROM personal WHERE id = $id";
+        $nombre=$_GET['nombre'];
+        $edad=$_GET['edad'];
+        $raza=$_GET['raza'];
+        $postulaciones=$_GET['postulaciones'] + 1;
+
+        $sql = "INSERT INTO mascota VALUES(null, $nombre, $edad, $raza, $postulaciones)"
     }
 
 
-    $resSql = mysqli_query($conexion, $sql);
+
+    $resSql = $miconexion->consulta($sql);
 
     // $idPersonal=$_POST['idPersonal'];
    
